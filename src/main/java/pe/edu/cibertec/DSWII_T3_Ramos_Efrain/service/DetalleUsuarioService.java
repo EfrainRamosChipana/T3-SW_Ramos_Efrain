@@ -21,6 +21,7 @@ import java.util.Set;
 @Service
 public class DetalleUsuarioService implements UserDetailsService {
     private UsuarioRepository usuarioRepository;
+    //Autenticacion segun los roles
     @Override
     public UserDetails loadUserByUsername(String username)
             throws UsernameNotFoundException {
