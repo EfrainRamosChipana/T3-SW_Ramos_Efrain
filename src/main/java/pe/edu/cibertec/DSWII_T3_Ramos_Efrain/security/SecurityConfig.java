@@ -34,7 +34,7 @@ public class SecurityConfig {
         httpSecurity
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(
-                        auth ->
+                        auth ->   //direcciones para el Get y Post
                                 auth.requestMatchers(HttpMethod.GET, "/api/v1/auth/**")
                                         .permitAll()
                                         .requestMatchers(HttpMethod.POST, "/api/v1/files/filesdoc").hasRole("Administrador")
