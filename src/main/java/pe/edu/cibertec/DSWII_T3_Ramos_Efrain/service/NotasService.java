@@ -12,6 +12,7 @@ import java.util.List;
 @Service
 public class NotasService implements INotasService {
 
+    //Para listar las notasDetalle
     private NotasRepository notasRepository;
     @Override
     public List<Notas> listarNotasConDetalles() {
