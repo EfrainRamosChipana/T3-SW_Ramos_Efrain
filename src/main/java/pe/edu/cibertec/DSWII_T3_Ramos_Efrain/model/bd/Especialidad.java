@@ -11,6 +11,7 @@ import lombok.*;
 @Entity
 @Table(name = "especialidad")
 public class Especialidad {
+    //Tabla Especialidad
     @Id
     @Column(name = "idesp")
     private String idEsp;

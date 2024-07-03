@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 
 public class FiltroJWTAutorizacion extends OncePerRequestFilter {
 
-    private final String CLAVE = "@Cibertec2024";
+    private final String CLAVE = "@Cibertec2024"; //CREACION DE CLAVE
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
@@ -54,7 +54,7 @@ public class FiltroJWTAutorizacion extends OncePerRequestFilter {
                 );
         SecurityContextHolder.getContext().setAuthentication(authenticationToken);
     }
-
+    //Para validar el token
     private Claims validarToken(HttpServletRequest request){
         String token = request.getHeader("Authorization")
                 .replace("Bearer ", "");

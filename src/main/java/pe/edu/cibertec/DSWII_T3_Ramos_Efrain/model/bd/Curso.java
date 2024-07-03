@@ -11,6 +11,7 @@ import lombok.*;
 @Entity
 @Table(name = "curso")
 public class Curso {
+    //Tabla Curso
     @Id
     @Column(name = "idcurso")
     private String idCurso;

@@ -12,6 +12,7 @@ import lombok.*;
 @Table(name = "notas")
 @IdClass(NotasId.class)
 public class Notas {
+    //Tabla  notas
     @Id
     @Column(name = "idalumno")
     private String idAlumno;
